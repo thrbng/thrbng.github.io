@@ -46,6 +46,14 @@
     .project-card a:hover {
       text-decoration: underline;
     }
+    .project-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px #00000022;
+    }
   </style>
 </head>
 <body>
@@ -63,26 +71,25 @@
 
     <section>
       <h2>Projects</h2>
+      <img src="images/projects-overview.jpg" alt="Projects Overview" class="project-image">
+    
       <div class="project-list">
         <div class="project-card">
           <h3>Amlak - Property Manager</h3>
           <p><strong>Tech:</strong> Kotlin, Firebase Firestore, XML, Material Design</p>
-          <p>An Android app to manage real estate listings. Features include image gallery selection, predefined status types, and AdMob integration.</p>
-          <a href="#" target="_blank">🔗 View on GitHub</a>
+          <p>Manage real estate listings with image selection, predefined status values, and AdMob banner integration.</p>
         </div>
     
         <div class="project-card">
           <h3>Stock Shaper</h3>
           <p><strong>Tech:</strong> Kotlin, Firebase, Room DB</p>
-          <p>Inventory and sales management Android app with offline/online support. Syncs data with a desktop version using Firebase Cloud.</p>
-          <a href="#" target="_blank">🔗 View on GitHub</a>
+          <p>Android app for product, invoice, and stock management. Works offline and syncs with desktop apps via Firebase.</p>
         </div>
     
         <div class="project-card">
           <h3>MyShop – Shopify Front</h3>
           <p><strong>Tech:</strong> Liquid, HTML/CSS, Shopify Editor</p>
-          <p>Custom storefront for a women’s fashion brand. Includes embedded video banners, responsive design, and visual editing using Shopify tools.</p>
-          <a href="#" target="_blank">🔗 View Website</a>
+          <p>Custom fashion storefront using Shopify with video sections, visual design, and responsive layout.</p>
         </div>
       </div>
     </section>
