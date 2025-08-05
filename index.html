@@ -27,6 +27,23 @@
       text-align: center;
     }
 
+    .header-contacts {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .header-contacts a {
+      color: #fff;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+    }
+
+    .header-contacts a:hover {
+      color: #bbdefb;
+    }
+
     main {
       max-width: 700px;
       margin: 2rem auto;
@@ -103,13 +120,13 @@
     .project-info p {
       margin: 0.5rem 0;
     }
-    
+
     .contact-list {
       list-style: none;
       padding: 0;
       margin: 1rem 0;
     }
-    
+
     .contact-list li {
       margin-bottom: 1rem;
       font-size: 1rem;
@@ -117,23 +134,33 @@
       align-items: center;
       gap: 0.5rem;
     }
-    
+
     .contact-list i {
       color: #1e88e5;
       font-size: 1.2rem;
       width: 20px;
     }
-    
+
     .contact-list a {
       color: #1e88e5;
       text-decoration: none;
       font-weight: 500;
     }
-    
+
     .contact-list a:hover {
       text-decoration: underline;
     }
-    
+
+    details summary {
+      cursor: pointer;
+      color: #1e88e5;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    details[open] summary {
+      margin-bottom: 0.5rem;
+    }
   </style>
 </head>
 
@@ -141,23 +168,40 @@
   <header>
     <h1>Mohammed Elamine Tahar BENGUELLA</h1>
     <p>Android Mobile App Developer | AI/ML Enthusiast</p>
+    <div class="header-contacts">
+      <a href="mailto:benguella.tahar@gmail.com" title="Email" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://github.com/thrbng" title="GitHub" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/tahar-benguella" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
   </header>
 
   <main>
     <section>
       <h2>About Me</h2>
       <p>
-        Hi, I’m Mohammed Elamine Tahar Benguella — a passionate Android mobile developer and AI enthusiast.
+        I’m an Android developer passionate about building smart, user-friendly apps — and diving deep into the world of AI.
       </p>
-      <p>
-        I hold a Bachelor's degree in Computer Systems from the University of Mustapha Stambouli Mascara, and I'm currently pursuing a Master’s in Artificial Intelligence at USTO-MB University.
-      </p>
-      <p>
-        I specialize in building native Android applications using Kotlin and XML, with solid experience integrating Firebase, Room, and Material Design. My apps are designed for both performance and user experience, and I often implement cloud syncing and offline-first architecture.
-      </p>
-      <p>
-        Beyond mobile development, I actively explore modern web technologies, NLP, and AI — always learning, always building, and always pushing forward.
-      </p>
+      <details>
+        <summary>Read full bio</summary>
+        <p>
+          Hi, I’m Mohammed Elamine Tahar Benguella — a passionate Android mobile developer and AI enthusiast.
+        </p>
+        <p>
+          I hold a Bachelor's degree in Computer Systems from the University of Mustapha Stambouli Mascara, and I'm currently pursuing a Master’s in Artificial Intelligence at USTO-MB University.
+        </p>
+        <p>
+          I specialize in building native Android applications using Kotlin and XML, with solid experience integrating Firebase, Room, and Material Design. My apps are designed for both performance and user experience, and I often implement cloud syncing and offline-first architecture.
+        </p>
+        <p>
+          Beyond mobile development, I actively explore modern web technologies, NLP, and AI — always learning, always building, and always pushing forward.
+        </p>
+      </details>
     </section>
 
     <section>
@@ -175,7 +219,7 @@
             </p>
           </div>
         </div>
-    
+
         <div class="project-card">
           <img src="images/IchraakSchool.jpg" alt="Screenshot of Ichraak School Android app interface">
           <div class="project-info">
