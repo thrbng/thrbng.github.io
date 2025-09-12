@@ -173,6 +173,23 @@
       color: #a8b2d1;
       font-size: 0.9rem;
     }
+
+    .play-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #3ddc84;
+      color: #1b2021;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    
+    .play-button:hover {
+      background: #2cbf6a;
+      color: #fff;
+    }
   </style>
 </head>
 
@@ -222,6 +239,23 @@
     <section>
       <h2>Projects</h2>
       <div class="project-gallery">
+        <div class="project-card">
+          <img src="images/PropEasy.jpg" alt="Screenshot of PropEasy Android app interface">
+          <div class="project-info">
+            <h3>PropEasy - Properties Manager</h3>
+            <p><strong>Tech:</strong> Kotlin, Room DB, Google AdMob</p>
+            <p>
+              PropEasy is a property management Android app designed to simplify renting, selling,
+              and exchanging properties. It allows users to add and manage property listings with images,
+              prices, and details, while offering real-time status tracking. With its clean interface
+              and built-in AdMob integration, PropEasy makes property management efficient and user-friendly.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.tahardevs.propeasy" target="_blank" class="play-button">
+              <i class="fab fa-google-play"></i> Get it on Google Play
+            </a>
+          </div>
+        </div>
+        
         <div class="project-card">
           <img src="images/StockShaper.jpg" alt="Screenshot of Stock Shaper Android app interface">
           <div class="project-info">
